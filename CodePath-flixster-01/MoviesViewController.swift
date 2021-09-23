@@ -51,14 +51,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return movies.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         
         let movie = movies[indexPath.row]
         // need to cast title: tell what's the type
         let title = movie["title"] as! String
+        let synopsis = movie["overview"] as! String
         
         // ?: swift optional
-        cell.textLabel?.text = title
+        cell.titleLabel.text = title
+        cell.synopsisLabel.text = synopsis
         
         return cell
     }
