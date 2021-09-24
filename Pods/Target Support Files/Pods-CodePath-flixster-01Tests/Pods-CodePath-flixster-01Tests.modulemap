@@ -1,0 +1,6 @@
+framework module Pods_CodePath_flixster_01Tests {
+  umbrella header "Pods-CodePath-flixster-01Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
