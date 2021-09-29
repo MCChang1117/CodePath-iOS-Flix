@@ -65,6 +65,7 @@
                                             <outlet property="posterView" destination="ziC-39-VEp" id="aCy-R2-cq2"/>
                                             <outlet property="synopsisLabel" destination="7mt-HM-LV9" id="IVv-dE-ZcA"/>
                                             <outlet property="titleLabel" destination="4dj-8E-Axe" id="4Tk-CW-Afw"/>
+                                            <segue destination="zQf-87-REa" kind="show" id="dyR-Ec-Kt8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -87,6 +88,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.125" y="78.16901408450704"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="Ywd-j4-qL0">
+            <objects>
+                <viewController id="zQf-87-REa" customClass="MovieDetailsViewController" customModule="CodePath_flixster_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Mn-RW-2MY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8u9-Qe-LgD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HjB-R9-tVz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDn-7u-rdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="no9-nd-feP">
